@@ -1,3 +1,7 @@
+'''
+    https://www.tensorflow.org/api_docs/python/tf/one_hot
+'''
+
 import tensorflow as tf
 import numpy as np
 
