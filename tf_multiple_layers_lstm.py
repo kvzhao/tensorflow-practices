@@ -1,6 +1,5 @@
 import tensorflow as tf
 
-
 num_units = 32
 num_layers = 3
 dropout = tf.placeholder(tf.float32)
