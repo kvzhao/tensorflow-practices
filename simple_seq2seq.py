@@ -15,7 +15,7 @@ PAD = 0
 EOS = 1
 
 vocab_size = 10
-embedding_size = 20
+embedding_size = 25
 encoder_hidden_units = 20
 decoder_hidden_units = 20
 
@@ -122,7 +122,6 @@ for batch in range(max_batches):
 
             if (i > 2):
                 break
-
 
 #%matplotlib inline
 import matplotlib.pyplot as plt

@@ -24,3 +24,6 @@ print (x)
 print (y)
 #print (sess.run(x))
 #print (sess.run(y))
+
+print (x.shape)
+print (x.get_shape())

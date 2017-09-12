@@ -51,6 +51,7 @@ num_of_words = len(words_as_set)
 
 # declaring embedding vectors (figure out)
 state_size = 128
+# [10000x128] 
 embedding_params = tf.Variable(tf.random_uniform([num_of_words, state_size], -0.02, 0.02))
 
 lstm = []
@@ -97,8 +98,11 @@ def get_mini_batch(batch_size, num_steps):
         targets.append(t)
     return words, targets
 
+# print 4 examples
 w, t = get_one_example(4)
 print([id_to_word[x] for x in w], [id_to_word[x] for x in t])
+print ('indices of word in V')
+print (w)
 
 ws, ts = get_mini_batch(2, 4)
 for i in range(2):

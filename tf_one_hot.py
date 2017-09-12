@@ -15,3 +15,6 @@ out = sess.run(onehot)
 
 print ('one hot repr {}'.format(out))
 print ('Nonzero indices {}'.format(np.nonzero(out)[1]))
+
+# spin configuration
+print (sess.run(tf.one_hot([1, -1, 1, 0, -1], depth=10)))

@@ -1,15 +1,16 @@
 import tensorflow as tf
 import numpy as np
 
+from toy_seq_data import ToySequenceData
+
 tf.reset_default_graph()
 sess = tf.Session()
 
-
 batch_size = 2
 max_seq_len = 8
-x_dim = 5
+x_dim = 1
 
-# Shape = [batch_size, n_steps (max time), n_inputs (num of features)]
+# Shape = [batch_size, max_time, n_inputs (num of features)]
 X = np.random.randn(batch_size, max_seq_len, x_dim)
 
 # The second example is of length 6 
@@ -40,3 +41,6 @@ res = sess.run(out,
 print (res)
 print (res.shape)
 # [batchsize, max_len(time), hidden size]
+
+print (res)
+print (res.shape)
