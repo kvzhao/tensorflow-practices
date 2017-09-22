@@ -22,3 +22,6 @@ print (type(saved))
 
 for k, v in saved.items():
     print (k, v)
+
+print (saved['number'])
+print (saved['name'])
