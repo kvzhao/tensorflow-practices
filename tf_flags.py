@@ -25,3 +25,11 @@ for k, v in saved.items():
 
 print (saved['number'])
 print (saved['name'])
+
+class Config:
+    def __init__(self, **entries):
+        self.__dict__.update(entries)
+
+myconfig = Config(**saved)
+print (myconfig.number)
+print (myconfig.name)
